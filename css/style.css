@@ -153,7 +153,6 @@ body::after{
   height:100%;
   object-fit:contain;
   object-position:bottom center;
-  transform-origin:bottom center;
   filter:drop-shadow(0 24px 48px rgba(0,0,0,.45));
 }
 
@@ -195,8 +194,6 @@ body::after{
 /* celular */
 @media (max-width:760px){
   :root{ --rodape-h:58px; }
-
-  body{ background-position:center top; }
 
   .palco{ padding-inline:clamp(18px,6vw,32px); }
 
