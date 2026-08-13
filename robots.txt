@@ -1,0 +1,6 @@
+# robots.txt — marcaovivacqua.com.br
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+Sitemap: https://www.marcaovivacqua.com.br/sitemap.xml

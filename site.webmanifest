@@ -1,0 +1,13 @@
+{
+  "name": "Marcão Vivacqua",
+  "short_name": "Marcão",
+  "description": "Página oficial de Marcão Vivacqua — Sul do Espírito Santo.",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#062135",
+  "theme_color": "#0A2A46",
+  "icons": [
+    { "src": "img/favicon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
+  ]
+}
