@@ -62,8 +62,19 @@ body::after{
     url("../img/bg.jpg");
   background-size:auto, auto 118%;
   background-position:center, center top;
-  -webkit-mask-image:linear-gradient(90deg, transparent 0%, #000 16%, #000 84%, transparent 100%);
-  mask-image:linear-gradient(90deg, transparent 0%, #000 16%, #000 84%, transparent 100%);
+  /* a imagem nítida (auto 118%) mede ~76.5vh de largura, centrada:
+     bordas em 50% ± 38.2vh — o fade acompanha a borda REAL da imagem,
+     terminando antes dela para nunca mostrar corte seco */
+  -webkit-mask-image:linear-gradient(90deg,
+    transparent calc(50% - 37vh),
+    #000 calc(50% - 22vh),
+    #000 calc(50% + 22vh),
+    transparent calc(50% + 37vh));
+  mask-image:linear-gradient(90deg,
+    transparent calc(50% - 37vh),
+    #000 calc(50% - 22vh),
+    #000 calc(50% + 22vh),
+    transparent calc(50% + 37vh));
 }
 
 /* ---------- palco ---------- */
