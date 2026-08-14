@@ -154,6 +154,9 @@ body::after{
   object-fit:contain;
   object-position:bottom center;
   filter:drop-shadow(0 24px 48px rgba(0,0,0,.45));
+  /* dissolve a base da foto antes da onda — sem linha de corte visível */
+  -webkit-mask-image:linear-gradient(180deg, #000 76%, rgba(0,0,0,0) 96%);
+  mask-image:linear-gradient(180deg, #000 76%, rgba(0,0,0,0) 96%);
 }
 
 /* Marcão um pouco maior — somente desktop.
