@@ -212,12 +212,15 @@ body::after{
 
   .palco{ padding-inline:clamp(18px,6vw,32px); }
 
-  .retrato{ padding-top:clamp(44px, 9vh, 96px); }   /* desce a logo do topo */
+  .retrato{ padding-top:clamp(64px, 12vh, 128px); }  /* desce a logo do topo */
 
   .retrato__logo{
     width:min(100%, 420px);
     margin-bottom:clamp(2px,.6vh,8px);
   }
+
+  /* foto um pouco mais para cima (a base fica coberta pelo morrinho) */
+  .retrato__foto{ transform:translateY(clamp(-44px, -4.5vh, -18px)); }
 }
 
 /* celular com pouca altura — devolve espaço para a foto */
